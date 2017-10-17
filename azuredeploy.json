@@ -265,6 +265,13 @@
 				"description": "Enable Azure as Cloud Provider - true or false"
 			}
 		},
+		"aadAppName": {
+			"type": "string",
+			"minLength": 1,
+			"metadata": {
+				"description": "Azure AD App Name"
+			}
+		},
 		"aadClientId": {
 			"type": "string",
 			"minLength": 1,
@@ -1962,6 +1969,9 @@
 					},
 					"enableAzure": {
 						"value": "[parameters('enableAzure')]"
+					},
+					"aadAppName": {
+						"value": "[parameters('aadAppName')]"
 					},
 					"aadClientId": {
 						"value": "[parameters('aadClientId')]"
