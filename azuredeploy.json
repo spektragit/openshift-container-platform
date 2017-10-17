@@ -22,7 +22,7 @@
 		},
 		"customStorageAccount": {
 			"type": "string",
-			"defaultValue": "https://rhelstrg.blob.core.windows.net/",
+			"defaultValue": "https://rhelopsh.blob.core.windows.net/",
 			"metadata": {
 				"description": "Storage account that contains the custom OS Disk.  This is the full URL of the Storage Account. Include the ending /"
 			}
