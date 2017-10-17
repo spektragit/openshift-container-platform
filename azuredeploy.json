@@ -8,11 +8,11 @@
 				"description": "Base URL for Template Files",
 				"artifactsBaseUrl": ""
 			},
-			"defaultValue": "https://raw.githubusercontent.com/Microsoft/openshift-container-platform/master"
+			"defaultValue": "https://raw.githubusercontent.com/PraveenAnil/openshift-container-platform/master"
 		},
 		"customVhdOrGallery": {
 			"type": "string",
-			"defaultValue": "gallery",
+			"defaultValue": "custom",
 			"allowedValues": [
 				"custom", "gallery"
 			],
@@ -22,21 +22,21 @@
 		},
 		"customStorageAccount": {
 			"type": "string",
-			"defaultValue": "https://osdiskstorageaccount.blob.core.windows.net/",
+			"defaultValue": "https://rhelstrg.blob.core.windows.net/",
 			"metadata": {
 				"description": "Storage account that contains the custom OS Disk.  This is the full URL of the Storage Account. Include the ending /"
 			}
 		},
 		"customOsDiskName": {
 			"type": "string",
-			"defaultValue": "images/customosdisk.vhd",
+			"defaultValue": "openshift/rhel7client1.vhd",
 			"metadata": {
 				"description": "The name of the custom OS Disk and the folder it is located in."
 			}
 		},
 		"masterVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS2_v2",
+			"defaultValue": "Standard_D2_v2",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
@@ -60,7 +60,7 @@
 		},
 		"infraVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS2_v2",
+			"defaultValue": "Standard_D2_v2",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
@@ -84,7 +84,7 @@
 		},
 		"nodeVmSize": {
 			"type": "string",
-			"defaultValue": "Standard_DS2_v2",
+			"defaultValue": "Standard_D2_v2",
 			"allowedValues": [
 				"Standard_A4", "Standard_A5", "Standard_A6", "Standard_A7", "Standard_A8", "Standard_A9", "Standard_A10", "Standard_A11",
 				"Standard_D2", "Standard_D3", "Standard_D4",
